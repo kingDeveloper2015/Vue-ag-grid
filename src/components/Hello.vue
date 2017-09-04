@@ -1,16 +1,20 @@
 <template>
   <div class="hello">
-    
+    <master-detail></master-detail>
   </div>
 </template>
 
 <script>
+import masterDetail from './MasterDetailExample.vue'
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    'master-detail': masterDetail
   }
 }
 </script>
